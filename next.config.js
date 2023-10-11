@@ -17,10 +17,11 @@ const nextConfig = {
         shared: {},
       })
     );
-    // config.optimization = {
-    //   ...config.optimization,
-    //   runtimeChunk: false,
-    // };
+
+    config.optimization = {
+      ...config.optimization,
+      runtimeChunk: false,
+    };
 
     return config;
   },
